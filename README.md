@@ -2,6 +2,10 @@
 
 A WebGL2-powered interactive simulation where simple local rules create complex, evolving organic patterns in real time.
 
+## Live Demo
+
+This project can be deployed to [Cloudflare Pages](https://pages.cloudflare.com/). After connecting the repo and deploying, it will be available at your configured URL (e.g. `neural-cellular-automata.pages.dev` or your custom domain).
+
 ## Highlights
 - Real-time neural/cellular texture evolution on the GPU
 - Paint directly into the simulation with pointer input
@@ -13,6 +17,7 @@ A WebGL2-powered interactive simulation where simple local rules create complex,
 - TypeScript
 - WebGL2 + GLSL shaders
 - Vite
+- [Cloudflare Pages](https://pages.cloudflare.com/) – hosting and deployment
 
 ## Quick Start
 1. Install dependencies.
@@ -36,6 +41,27 @@ npm run build
 ```bash
 npm run preview
 ```
+
+### Deployment
+
+Build locally with:
+```bash
+bun run build
+```
+
+Deploy to Cloudflare Pages with:
+```bash
+bun run deploy
+```
+
+To target production explicitly:
+```bash
+bun run deploy:production
+```
+
+**Cloudflare Pages (Git):** You can also connect this repository in the Cloudflare dashboard: build command `bun run build` (or `npm run build`), output directory `dist`.
+
+This is a static site; no Wrangler config file is required. The deploy script uses `wrangler pages deploy` with the project name.
 
 ## Controls
 | Action | Input |
