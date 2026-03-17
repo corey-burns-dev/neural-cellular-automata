@@ -18,7 +18,7 @@
     "oxlint": "^1.56.0",
     "typescript": "^5.9.3",
     "vite": "^8.0.0",
-    "wrangler": "^4.74.0",
+    "wrangler": "^4.75.0",
     "husky": "^9.1.7",
     "lint-staged": "^16.4.0"
   },
